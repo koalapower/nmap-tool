@@ -1,0 +1,12 @@
+{
+  "kumaAddress" : "10.10.10.10",
+  "kumaAPIPort" : "7223",
+  "kumaToken" : "f5559082a189023d4f33c37986df42ac",
+  "tenantName" : "Main",
+  "useCustomFieldForPorts" : true,
+  "useCustomFieldForScanner" : true,
+  "settingsID" : "73c2d680-083e-46d9-a6e9-7e9113419271",
+  "customFieldForPortsName" : "Ports",
+  "customFieldForScannerName" : "Scanner",
+  "reportPath" : "scan.xml"
+}
