@@ -1,9 +1,9 @@
 # nmap-tool: tool for import asset from nmap report to KUMA
-# Description
+## Description
 nmap-tool - tool for import asset from nmap report to KUMA. It supports import of ip, fqdn, mac addresses, OS, vulnerabilities, open ports.
 For nmap-tool kumaPublicApiV1 is required: https://github.com/koalapower/kumaPublicApiV1
 
-# Quick start
+## Quick start
 1. Donwload nmap-tool.py, params.json and kumaPublicApiV1 and place then in the same folder
 2. Run nmap and save report into XML format
 ```
@@ -15,7 +15,7 @@ nmap -sS 10.0.0.1/24 -F -sV -O -oX scan.xml
 python3 nmap-tool.py
 ```
 
-# About params.json
+## About params.json
 1. kumaAddress - KUMA Core component address (may be FQDN or IP)
 2. kumaAPIPort - KUMA REST API port (7223 by default)
 3. tenantName - name of the tenant for import assets
