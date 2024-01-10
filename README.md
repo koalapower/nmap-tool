@@ -26,4 +26,4 @@ python3 nmap-tool.py
 8. customFieldForScannerName - name of custom filed to store scanner information (you should create custom field for scanner manualy in KUMA web-interface)
 9. reportPath - path to nmap report
 
-If you dont need custom fileds, set 4 and 5 parameter false and igonre parameters 6-8.
+If you dont need custom fields, set 4 and 5 parameter false and igonre parameters 6-8.
