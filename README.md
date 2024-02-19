@@ -29,15 +29,15 @@ python3 nmap-tool.py
 1. `kumaAddress` - адрес сервера ядра KUMA
 2. `kumaAPIPort` - API-порт сервера ядра KUMA (`7223` по умолчанию)
 3. `kumaToken` - токен для доступа к API KUMA. Должны быть следующие права доступа: `GET /settings/id/:id`, `GET /tenants`, `POST /assets/import`.
-5. `tenantName` - имя тенанта для импорта активов
-6. `useCustomFieldForPorts` - `true`/`false` если планируется импорт информации об открытых портах в кастомные поля активов (вы должны заранее создать соответствующие поля в интерфейсе KUMA)
-7. `useCustomFieldForScanner` - `true`/`false` если планируется импорт информации об имени сканера (nmap) в кастомное поле актива (вы должны заранее создать соответствующие поля в интерфейсе KUMA)
-8. `settingsID` - id параметров из веб-интерфейса KUMA (В веб-интерфейсе зайдите Settings -> Assets, нажмите F12 для перехода в режим разработчика, выберите Network, после нажмите Сохранить внизу Asset settings. Во вкладке Network режима разработчика будет id параметров KUMA)
-9. `customFieldForPortsName` - имя кастомного поля актива, куда будет записана информации об открытых портах (вы должны заранее создать соответствующие поля в интерфейсе KUMA)
-10. `customFieldForScannerName` - имя кастомного поля актива, куда будет записана информация о сканере (вы должны заранее создать соответствующие поля в интерфейсе KUMA)
-11. `reportPath` - полный путь к файлу отчета сканирования nmap
+4. `tenantName` - имя тенанта для импорта активов
+5. `useCustomFieldForPorts` - `true`/`false` если планируется импорт информации об открытых портах в кастомные поля активов (вы должны заранее создать соответствующие поля в интерфейсе KUMA)
+6. `useCustomFieldForScanner` - `true`/`false` если планируется импорт информации об имени сканера (nmap) в кастомное поле актива (вы должны заранее создать соответствующие поля в интерфейсе KUMA)
+7. `settingsID` - id параметров из веб-интерфейса KUMA (В веб-интерфейсе зайдите Settings -> Assets, нажмите F12 для перехода в режим разработчика, выберите Network, после нажмите Сохранить внизу Asset settings. Во вкладке Network режима разработчика будет id параметров KUMA)
+8. `customFieldForPortsName` - имя кастомного поля актива, куда будет записана информации об открытых портах (вы должны заранее создать соответствующие поля в интерфейсе KUMA)
+9. `customFieldForScannerName` - имя кастомного поля актива, куда будет записана информация о сканере (вы должны заранее создать соответствующие поля в интерфейсе KUMA)
+10. `reportPath` - полный путь к файлу отчета сканирования nmap
 
-Если вы не планируете использовать кастомные поля, установите для параметров 4 и 5 значение false и игнорируйте параметры 6-8.
+Если вы не планируете использовать кастомные поля, установите для параметров 5 и 6 значение `false` и игнорируйте параметры 7-9.
 
 ## Description
 nmap-tool - tool for import asset from nmap report to KUMA. It supports import of ip, fqdn, mac addresses, OS, vulnerabilities, open ports.
@@ -73,4 +73,4 @@ python3 nmap-tool.py
 9. `customFieldForScannerName` - name of custom filed to store scanner information (you should create custom field for scanner manualy in KUMA web-interface)
 10. `reportPath` - path to nmap report
 
-If you dont need custom fields, set 4 and 5 parameter false and igonre parameters 6-8.
+If you dont need custom fields, set 5 and 6 parameter `false` and igonre parameters 7-9.
